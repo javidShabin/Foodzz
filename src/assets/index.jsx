@@ -6,6 +6,10 @@ import user from "./user.png";
 import menu from "./menu.png";
 import map from "./map.png";
 
+import slide1 from './slide1.png'
+import slide2 from './slide2.png'
+import slide3 from './slide3.png'
+
 export{
     logo,
     home,
@@ -13,5 +17,8 @@ export{
     bag,
     user,
     menu,
-    map
+    map,
+    slide1,
+    slide2,
+    slide3
 }
