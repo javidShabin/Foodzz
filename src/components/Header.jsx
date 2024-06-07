@@ -4,7 +4,14 @@ import { bag, home, logo, menu, search, user } from '../assets'
 export default function Header() {
     let [menuClass, setMenuClass] = useState("")
     const showSideBar = () => {
-        alert("redy")
+        // State manage ment
+        setMenuClass(prevMenuClass => {
+            if(prevMenuClass === ""){
+                return "active"
+            }else {
+                return ""
+            }
+        })
     }
   return (
     <header className='header'>
@@ -12,14 +19,14 @@ export default function Header() {
             <div className="logo">
                 <img src={logo} alt="logo" />
             </div>
-            <ul>
+            <ul className={menuClass}>
                 <li><a href="#"><img src={home} />Home</a></li>
                 <li><a href="#"><img src={search} />Search</a></li>
                 <li><a href="#"><img src={bag} />Cart</a></li>
                 <li><a href="#"><img src={user} />Account</a></li>
             </ul>
             <div className="toggle-menu">
-                <img src={menu} onClick={showSideBar}/>
+                <img className={menuClass} src={menu} onClick={showSideBar}/>
             </div>
         </div>
     </header>
