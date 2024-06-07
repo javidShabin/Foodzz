@@ -4,6 +4,7 @@ import search from "./search.png";
 import bag from "./bag.png";
 import user from "./user.png";
 import menu from "./menu.png";
+import map from "./map.png";
 
 export{
     logo,
@@ -11,5 +12,6 @@ export{
     search,
     bag,
     user,
-    menu
+    menu,
+    map
 }
