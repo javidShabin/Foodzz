@@ -37,3 +37,6 @@
 .header .container .toggle-menu img{
     width: 30px;
 }
+.header .container .toggle-menu img.active{
+    width: 100px;
+}

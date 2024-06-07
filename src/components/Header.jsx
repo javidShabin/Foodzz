@@ -1,7 +1,11 @@
-import React from 'react'
+import {useState} from 'react'
 import { bag, home, logo, menu, search, user } from '../assets'
 
 export default function Header() {
+    let [menuClass, setMenuClass] = useState("")
+    const showSideBar = () => {
+        alert("redy")
+    }
   return (
     <header className='header'>
         <div className="container">
@@ -15,7 +19,7 @@ export default function Header() {
                 <li><a href="#"><img src={user} />Account</a></li>
             </ul>
             <div className="toggle-menu">
-                <img src={menu} />
+                <img src={menu} onClick={showSideBar}/>
             </div>
         </div>
     </header>
