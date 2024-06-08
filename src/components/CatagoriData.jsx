@@ -9,22 +9,27 @@ const catData = [
     {
         id: 2,
         imgSrc: cat3,
-        name: "Biriyani"
+        name: "Burgur"
     },
     {
         id: 3,
         imgSrc: cat4,
-        name: "Biriyani"
+        name: "Roll"
     },
     {
         id: 4,
         imgSrc: cat5,
-        name: "Biriyani"
+        name: "Sandwich"
+    },
+    {
+        id: 5,
+        imgSrc: cat6,
+        name: "Chinees"
     },
     {
         id: 6,
         imgSrc: cat7,
-        name: "Biriyani"
+        name: "North"
     },
 ]
 
