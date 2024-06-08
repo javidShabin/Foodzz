@@ -5,9 +5,13 @@ import cardData from "./CardData";
 
 
 export default function Foods() {
+    // Get card data  from cardData
     let home = cardData.map((item) => {
         return(
-            <Home/>
+            <Home 
+            key={item.id}
+            cardContent={{imgSrc: item.imgSrc}}
+            />
         )
     })
   return (
