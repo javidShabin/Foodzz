@@ -98,6 +98,105 @@
     font-size: 16px;
 }
 
+/* Restaurent sevtion */
+.restaurent{
+    text-align: center;
+    height: 32vh;
+}
+.restaurent h4{
+    margin-top: 50px;
+    font-size: 18px;
+    color: #353535;
+}
+.restaurent .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: justify;
+}
+.restaurent .wrapper .container{
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    padding: 0 20px;
+    overflow-x: scroll;
+}
+.restaurent .wrapper .container::-webkit-scrollbar{
+    display: none;
+}
+.restaurent .wrapper .container .card{
+    width: 330px;
+    height: 140px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #848484;
+    border-radius: 12px;
+}
+.restaurent .wrapper .container .card .left{
+    margin-left: 15px;
+}
+.restaurent .wrapper .container .card .left img{
+    width: 100px;
+    border-radius: 12px;
+}
+.restaurent .wrapper .container .card .right{
+    margin-left: 20px;
+}
+.restaurent .wrapper .container .card .right h3{
+    color: #353535;
+    font-size: 16px;
+    line-height: 2rem;
+}
+.restaurent .wrapper .container .card .right p{
+    color: #353535;
+    font-size: 12px;
+    line-height: 1rem;
+}
+.restaurent .wrapper .container .card .right .icon{
+    display: flex;
+    justify-content: space-around;
+    line-height: 2rem;
+}
+.restaurent .wrapper .container .card .right .icon img{
+    width: 15px;
+}
+.restaurent .wrapper .container .card .right .dicImg{
+    color: #ff0000;
+    font-size: 13px;
+}
+.restaurent .wrapper .container .card .right .dicImg img{
+    width: 15px;
+}
+/* .restaurent{
+    width: 100%;
+}
+.restaurent .container .wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: left;
+    margin-left: 50px;
+}
+.restaurent .container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+    overflow-x: scroll;
+}
+.restaurent .container .card{
+    width: 300px;
+    display: flex;
+    align-items: center;
+    border: 1px solid red;
+}
+.restaurent .container .card .left{}
+.restaurent .container .card .left img{
+    width: 100px;
+}
+.restaurent .container .card .right img{
+    width: 15px;
+}
+ */
 
 
 /* Responsive screen size */
