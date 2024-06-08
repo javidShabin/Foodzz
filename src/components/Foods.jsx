@@ -4,6 +4,7 @@ import Home from "./Home";
 import cardData from "./CardData";
 import Catagory from "./Catagory";
 import catData from "./CatagoriData";
+import Restaurents from "./Restaurents";
 
 export default function Foods() {
   // Get card data  from cardData
@@ -34,6 +35,7 @@ export default function Foods() {
           <div className="container">{catagoriData}</div>
         </div>
       </div>
+      <Restaurents/>
     </div>
   );
 }
