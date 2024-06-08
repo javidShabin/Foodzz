@@ -56,6 +56,10 @@
     gap: 15px;
     overflow-x: scroll;
 }
+.home .container::-webkit-scrollbar{
+    display: none;
+}
+
 .home .container img{
     width: 350px;
     border-radius: 15px;
@@ -96,6 +100,22 @@
     .header .toggle-menu{
         display: none;
     }
+
+    /* Home section */
+    
+    .home .container{
+        margin-top: 25px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 15px;
+        overflow-x: unset;
+    }
+    
+    .home .container img{
+        width: 100%;
+        border-radius: 15px;
+    }
+    
 }
 
 @media screen and (min-width : 999px){
@@ -114,5 +134,14 @@
     }
     .header .container .location span img{
         width: 19px;
+    }
+
+    /* Home section */
+    .home{
+        padding: 0 30px;
+    }
+    .home .container{
+        margin-top: 35px;
+        overflow-x: unset;
     }
 }
