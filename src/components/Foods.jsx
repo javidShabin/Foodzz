@@ -11,10 +11,15 @@ export default function Foods() {
     return <Home key={item.id} cardContent={{ imgSrc: item.imgSrc }} />;
   });
 
-//   Get All catagory datas
-let catagoriData = catData.map((item) => {
-    return <Catagory key={item.id} catagoryItems={{imgSrc: item.imgSrc, name: item.name}} />
-})
+  //   Get All catagory datas
+  let catagoriData = catData.map((item) => {
+    return (
+      <Catagory
+        key={item.id}
+        catagoryItems={{ imgSrc: item.imgSrc, name: item.name }}
+      />
+    );
+  });
   return (
     <div>
       <Header />
@@ -25,11 +30,9 @@ let catagoriData = catData.map((item) => {
       {/* Catagory section */}
       <div className="catagory">
         <h4>What's on your mind</h4>
-      <div className="catagory-wrapper">
-        <div className="container">
-        {catagoriData}
+        <div className="catagory-wrapper">
+          <div className="container">{catagoriData}</div>
         </div>
-      </div>
       </div>
     </div>
   );

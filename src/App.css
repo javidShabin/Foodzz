@@ -66,10 +66,12 @@
 }
 
 /* Catagory section css */
+.catagory{
+    text-align: center;
+}
 .catagory h4{
     margin-top: 50px;
-    margin-left: 35px;
-    font-size: 20px;
+    font-size: 18px;
     color: #353535;
 }
 .catagory-wrapper{
@@ -190,6 +192,15 @@
     }
 
     /* Catagory section */
+    .catagory{
+        text-align: justify;
+    }
+    .catagory h4{
+        margin-top: 50px;
+        margin-left: 35px;
+        font-size: 20px;
+        color: #353535;
+    }
     .catagory-wrapper{
         display: flex;
         justify-content: center;
