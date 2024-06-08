@@ -168,35 +168,6 @@
 .restaurent .wrapper .container .card .right .dicImg img{
     width: 15px;
 }
-/* .restaurent{
-    width: 100%;
-}
-.restaurent .container .wrapper{
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    margin-left: 50px;
-}
-.restaurent .container{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 25px;
-    overflow-x: scroll;
-}
-.restaurent .container .card{
-    width: 300px;
-    display: flex;
-    align-items: center;
-    border: 1px solid red;
-}
-.restaurent .container .card .left{}
-.restaurent .container .card .left img{
-    width: 100px;
-}
-.restaurent .container .card .right img{
-    width: 15px;
-}
- */
 
 
 /* Responsive screen size */
@@ -261,6 +232,7 @@
         color: #353535;
         font-size: 16px;
     }
+
 }
 
 @media screen and (min-width : 999px){
@@ -324,5 +296,82 @@
     .catagory-wrapper .container .catCard h3{
         font-size: 16px;
     }
+
+    /* Restaurent section */
+
+    .restaurent{
+        text-align: justify;
+    }
+    .restaurent h4{
+        font-size: 20px;
+        margin-left: 35px;
+    }
+}
+
+@media screen and (min-width : 1090px){
+    /* Restaurent section */
+    .restaurent{
+        text-align: justify;
+    }
+    .restaurent .wrapper .container{
+        margin-top: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 25px;
+        padding: 0 20px;
+        overflow-x: unset;
+    }
     
+    .restaurent .wrapper .container .card{
+        width: 340px;
+        height: 140px;
+        display: flex;
+        align-items: center;
+        border: 1px solid #848484;
+        border-radius: 12px;
+    }
+}
+@media screen and (min-width : 1389px){
+    .restaurent{
+        text-align: justify;
+        height: 35vh;
+    }
+    .restaurent h4{
+        font-size: 22px;
+        margin-left: 35px;
+    }
+    .restaurent .wrapper .container .card{
+        width: 425px;
+        height: 160px;
+        
+    }
+}
+
+@media screen and (min-width : 1390px){
+    .restaurent{
+        text-align: justify;
+        height: 35vh;
+    }
+    .restaurent h4{
+        font-size: 22px;
+        margin-left: 35px;
+    }
+    .restaurent .wrapper .container .card{
+        width: 460px;
+        height: 170px;
+        
+    }
+    .restaurent .wrapper .container .card .left img{
+        width: 110px;
+        border-radius: 12px;
+    }
+    .restaurent .wrapper .container .card .right{
+        margin-left: 35px;
+    }
+    .restaurent .wrapper .container .card .right h3{
+        font-size: 17px;
+    }
+    .restaurent .wrapper .container .card .right p{
+        font-size: 13px;
+    }
 }
