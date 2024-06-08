@@ -17,7 +17,11 @@ export default function Foods() {
   return (
     <div>
       <Header />
+      <div className="home">
+      <div className="container">
       {home}
+      </div>
+      </div>
     </div>
   );
 }

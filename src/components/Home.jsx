@@ -1,10 +1,10 @@
-import React from 'react'
+import React from "react";
 
 export default function Home(props) {
-    console.log("redy",props.cardContent.imgSrc)
+  let image = props.cardContent.imgSrc;
   return (
-    <div>
-        
-    </div>
-  )
+    <>
+      <img src={image} alt="Banner images" />
+    </>
+  );
 }

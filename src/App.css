@@ -42,6 +42,25 @@
     width: 25px;
 }
 
+/* Home section */
+.home{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 0 10px;
+}
+.home .container{
+    margin-top: 25px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 15px;
+    overflow-x: scroll;
+}
+.home .container img{
+    width: 350px;
+    border-radius: 15px;
+}
+
 
 
 
