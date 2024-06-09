@@ -1,4 +1,3 @@
-import React from "react";
 import Header from "./Header";
 import Home from "./Home";
 import cardData from "./CardData";
@@ -25,19 +24,20 @@ export default function Foods() {
 
   //   Get restaurent datas
   let restaurents = resData.map((item) => {
-    return(
-        <Restaurents key={item.id} rescontents={
-            {
-                imgSrc: item.imgSrc,
-                name: item.name,
-                desc: item.desc,
-                starImg: item.starImg,
-                clockImg: item.clockImg,
-                discountImg: item.discountImg
-            }
-        } />
-    )
-  })
+    return (
+      <Restaurents
+        key={item.id}
+        rescontents={{
+          imgSrc: item.imgSrc,
+          name: item.name,
+          desc: item.desc,
+          starImg: item.starImg,
+          clockImg: item.clockImg,
+          discountImg: item.discountImg,
+        }}
+      />
+    );
+  });
 
   return (
     <div>
@@ -57,9 +57,7 @@ export default function Foods() {
       <div className="restaurent">
         <h4>Top restaurents</h4>
         <div className="wrapper">
-        <div className="container">
-        {restaurents}
-        </div>
+          <div className="container">{restaurents}</div>
         </div>
       </div>
     </div>

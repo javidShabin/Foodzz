@@ -91,6 +91,8 @@
     display: none;
 }
 .catagory-wrapper .container .catCard img{
+    padding: 0 10px;
+    margin-top: 20px;
     width: 180px;
 }
 .catagory-wrapper .container .catCard h3{
@@ -374,4 +376,5 @@
     .restaurent .wrapper .container .card .right p{
         font-size: 13px;
     }
+
 }

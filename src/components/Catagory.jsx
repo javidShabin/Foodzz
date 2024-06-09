@@ -2,6 +2,7 @@ import React from 'react'
 
 export default function Catagory(props) {
     let catItems = props.catagoryItems
+
   return (
     <>
     <div className="catCard">
