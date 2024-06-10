@@ -1,11 +1,14 @@
+import { useState } from "react";
 import Header from "./Header";
 import Home from "./Home";
 import Catagory from "./Catagory";
 import catData from "./CatagoriData";
 import Restaurents from "./Restaurents";
 import resData from "./ResData";
+import PopUp from "./PopUp";
 
 export default function Foods() {
+    let [popUpMenu, setPopUpMenu] = useState(false)
 
     const showPopUpHandler = () => {
         alert("Redy")
@@ -42,7 +45,8 @@ export default function Foods() {
   return (
     <div>
       <Header />
-      
+      {/* PopUp Component */}
+      {popUpMenu && <PopUp/>}
       {/* Home section */}
       <Home/>
       {/* Catagory section */}
