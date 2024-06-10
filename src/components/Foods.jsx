@@ -11,7 +11,7 @@ export default function Foods() {
     let [popUpMenu, setPopUpMenu] = useState(false)
 
     const showPopUpHandler = () => {
-        alert("Redy")
+        setPopUpMenu(true)
     }
 
   //   Get All catagory datas

@@ -3,7 +3,12 @@ import React from 'react'
 export default function PopUp() {
   return (
     <div>
-      <h1>PopUp</h1>
+      <div className="popup">
+        <div className="popup-container">
+            <h3>Show popup menu</h3>
+            <button>Order Now</button>
+        </div>
+      </div>
     </div>
   )
 }
