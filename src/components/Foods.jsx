@@ -46,7 +46,7 @@ export default function Foods() {
     <div>
       <Header />
       {/* PopUp Component */}
-      {popUpMenu && <PopUp/>}
+      {popUpMenu && <PopUp setPopUpMenu={setPopUpMenu} />}
       {/* Home section */}
       <Home/>
       {/* Catagory section */}
