@@ -7,12 +7,17 @@ import resData from "./ResData";
 
 export default function Foods() {
 
+    const showPopUpHandler = () => {
+
+    }
+
   //   Get All catagory datas
   let catagoriData = catData.map((item) => {
     return (
       <Catagory
         key={item.id}
         catagoryItems={{ imgSrc: item.imgSrc, name: item.name }}
+        showPopUpHandler={showPopUpHandler}
       />
     );
   });

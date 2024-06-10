@@ -1,13 +1,12 @@
 import React from 'react'
 
-export default function Catagory(props) {
-    let catItems = props.catagoryItems
+export default function Catagory({catagoryItems}) {
 
   return (
     <>
-    <div className="catCard">
-        <img src={catItems.imgSrc} alt="" />
-        <h3>{catItems.name}</h3>
+    <div className="catCard" onClick={showPopUpHandler}>
+        <img src={catagoryItems.imgSrc} alt="" />
+        <h3>{catagoryItems.name}</h3>
     </div>
     </>
   )
