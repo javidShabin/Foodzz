@@ -4,7 +4,7 @@ export default function Catagory({catagoryItems, showPopUpHandler}) {
 
   return (
     <>
-    <div className="catCard" onClick={showPopUpHandler}>
+    <div className="catCard" onClick={()=>{showPopUpHandler(catagoryItems.name, catagoryItems.imgSrc, catagoryItems.description)}}>
         <img src={catagoryItems.imgSrc} alt="" />
         <h3>{catagoryItems.name}</h3>
     </div>

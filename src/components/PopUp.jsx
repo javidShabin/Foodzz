@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function PopUp({setPopUpMenu}) {
+export default function PopUp({setPopUpMenu, itemsImg, description, itemsName}) {
     const showPopUp = () => {
         setPopUpMenu(false)
     }
@@ -8,7 +8,9 @@ export default function PopUp({setPopUpMenu}) {
     <div>
       <div className="popup">
         <div className="popup-container">
-            <h3>Show popup menu</h3>
+            <img src={itemsImg} alt="" />
+            <p>{description}</p>
+            <h3>{itemsName}</h3>
             <button>Order Now</button>
             <span className="close" onClick={showPopUp}>Close</span>
         </div>

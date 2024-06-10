@@ -9,8 +9,15 @@ import PopUp from "./PopUp";
 
 export default function Foods() {
     let [popUpMenu, setPopUpMenu] = useState(false)
+    let [itemsName, setItemsName] = useState('')
+    let [itemsImg, setItemsImg] = useState()
+    let [description, setDescription] = useState('')
 
-    const showPopUpHandler = () => {
+    // PopUp handler function its called in catagory section
+    const showPopUpHandler = (itemsName, itemsImg, itemDispt) => {
+        setItemsImg(itemsImg)
+        setDescription(itemDispt)
+        setItemsName(itemsName)
         setPopUpMenu(true)
     }
 
@@ -19,7 +26,7 @@ export default function Foods() {
     return (
       <Catagory
         key={item.id}
-        catagoryItems={{ imgSrc: item.imgSrc, name: item.name }}
+        catagoryItems={{ imgSrc: item.imgSrc, name: item.name, description: item.description}}
         showPopUpHandler={showPopUpHandler}
       />
     );
@@ -46,7 +53,12 @@ export default function Foods() {
     <div>
       <Header />
       {/* PopUp Component */}
-      {popUpMenu && <PopUp setPopUpMenu={setPopUpMenu} />}
+      {popUpMenu && <PopUp
+      itemsImg={itemsImg}
+      description={description}
+      itemsName={itemsName} 
+      setPopUpMenu={setPopUpMenu}
+       />}
       {/* Home section */}
       <Home/>
       {/* Catagory section */}
