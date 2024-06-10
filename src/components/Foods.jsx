@@ -1,16 +1,11 @@
 import Header from "./Header";
 import Home from "./Home";
-import cardData from "./CardData";
 import Catagory from "./Catagory";
 import catData from "./CatagoriData";
 import Restaurents from "./Restaurents";
 import resData from "./ResData";
 
 export default function Foods() {
-  // Get card data  from cardData
-  let home = cardData.map((item) => {
-    return <Home key={item.id} cardContent={{ imgSrc: item.imgSrc }} />;
-  });
 
   //   Get All catagory datas
   let catagoriData = catData.map((item) => {
@@ -42,10 +37,9 @@ export default function Foods() {
   return (
     <div>
       <Header />
+      
       {/* Home section */}
-      <div className="home">
-        <div className="container">{home}</div>
-      </div>
+      <Home/>
       {/* Catagory section */}
       <div className="catagory">
         <h4>What's on your mind</h4>

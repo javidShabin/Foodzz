@@ -43,27 +43,31 @@
 }
 
 /* Home section */
-.home{
-    width: 100%;
+/* Swiper Js Css */
+.swiper {
+    margin-top: 40px;
+    width: 96%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: justify;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
     display: flex;
     justify-content: center;
-    padding: 0 10px;
-}
-.home .container{
-    margin-top: 25px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 15px;
-    overflow-x: scroll;
-}
-.home .container::-webkit-scrollbar{
-    display: none;
-}
-
-.home .container img{
-    width: 350px;
-    border-radius: 15px;
-}
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+  }
 
 /* Catagory section css */
 .catagory{
