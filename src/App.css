@@ -44,6 +44,48 @@
 
 /* Home section */
 
+/* Toggle bar section */
+.toggle-bar{
+    position: relative;
+    top: 12rem;
+    right: 2rem;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: #ffffffe1;
+    border: 1px solid #353535;
+    border-radius: 10px;
+    transform: translateY(-110%);
+    opacity: 0;
+    transition: 0.4s;
+}
+.toggle-bar.active{
+    transform: translateY(0);
+    opacity: 1;
+}
+.toggle-bar ol{
+    margin-bottom: 20px;
+}
+.toggle-bar ol li{
+   padding: 15px 30px;
+   text-align: center;
+}
+.toggle-bar ol li a{
+    color: #353535;
+    font-weight: bold;
+}
+.toggle-bar ol li a img{
+    margin-right: 15px;
+    width: 18px;
+}
+.toggle-bar span img{
+    margin-right: 15px;
+    width: 18px;
+}
+
 /* PopUp section */
 .popup{
     width: 100%;
@@ -268,17 +310,9 @@
 
     /* Home section */
     
-    .home .container{
-        margin-top: 25px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 15px;
-        overflow-x: unset;
-    }
-    
-    .home .container img{
-        width: 100%;
-        border-radius: 15px;
+    /* Toggle bar section */
+    .toggle-bar{
+        display: none;
     }
     
     /* Catagory section */
