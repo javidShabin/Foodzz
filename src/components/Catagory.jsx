@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Catagory({catagoryItems}) {
+export default function Catagory({catagoryItems, showPopUpHandler}) {
 
   return (
     <>

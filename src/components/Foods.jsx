@@ -8,7 +8,7 @@ import resData from "./ResData";
 export default function Foods() {
 
     const showPopUpHandler = () => {
-
+        alert("Redy")
     }
 
   //   Get All catagory datas
