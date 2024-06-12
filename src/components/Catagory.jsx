@@ -1,10 +1,10 @@
 import React from 'react'
 
-export default function Catagory({catagoryItems, showPopUpHandler}) {
+export default function Catagory({catagoryItems}) {
 
   return (
     <>
-    <div className="catCard" onClick={()=>{showPopUpHandler(catagoryItems.name, catagoryItems.imgSrc, catagoryItems.description)}}>
+    <div className="catCard">
         <img src={catagoryItems.imgSrc} alt="" />
         <h3>{catagoryItems.name}</h3>
     </div>
