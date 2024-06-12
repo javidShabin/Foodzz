@@ -45,9 +45,6 @@ export default function Home() {
         <SwiperSlide>
               <img src={slide3} alt="Banner images" className="slide-img"/>
         </SwiperSlide>
-        <SwiperSlide>
-              <img src={slide1} alt="Banner images" className="slide-img"/>
-        </SwiperSlide>
       </Swiper>
     </>
   );

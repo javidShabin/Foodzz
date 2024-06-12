@@ -1,5 +1,4 @@
 import { useState } from "react";
-import Header from "./Header";
 import Home from "./Home";
 import Catagory from "./Catagory";
 import catData from "./CatagoriData";
@@ -51,7 +50,6 @@ export default function Foods() {
 
   return (
     <div>
-      <Header />
       {/* PopUp Component */}
       {popUpMenu && <PopUp
       itemsImg={itemsImg}

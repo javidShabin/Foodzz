@@ -1,5 +1,6 @@
 
-import { bag, home, logo, map, menu, search, user } from '../assets'
+import { Link } from 'react-router-dom'
+import { bag, home, logo, map, menu, search, user, } from '../assets'
 import { useState } from 'react'
 
 export default function Header() {
@@ -14,10 +15,10 @@ export default function Header() {
                 <img src={logo} alt="logo" />
             </div>
             <ul>
-                <li><a href="#"><img src={home} />Home</a></li>
-                <li><a href="#"><img src={search} />Search</a></li>
-                <li><a href="#"><img src={bag} />Cart</a></li>
-                <li><a href="#"><img src={user} />Account</a></li>
+                <li><Link to="/"><img src={home} />Home</Link></li>
+                <li><Link to="#"><img src={search} />Search</Link></li>
+                <li><Link to="#"><img src={bag} />Cart</Link></li>
+                <li><Link to="#"><img src={user} />Account</Link></li>
             </ul>
             <div className="location">
                 <span><img src={map}/><b>Tirur, Malappuram</b></span>
@@ -25,10 +26,10 @@ export default function Header() {
             {/* Toggle bar */}
             <div className={`toggle-bar ${showMenu}`}>
                 <ol>
-                <li><a href="#"><img src={home} />Home</a></li>
-                <li><a href="#"><img src={search} />Search</a></li>
-                <li><a href="#"><img src={bag} />Cart</a></li>
-                <li><a href="#"><img src={user} />Account</a></li>
+                <li><Link to="#"><img src={home} />Home</Link></li>
+                <li><Link to="#"><img src={search} />Search</Link></li>
+                <li><Link to="#"><img src={bag} />Cart</Link></li>
+                <li><Link to="#"><img src={user} />Account</Link></li>
                 </ol>
                 <span><img src={map}/><b>Tirur, Malappuram</b></span>
             </div>
