@@ -26,7 +26,7 @@ export default function Header() {
             {/* Toggle bar */}
             <div className={`toggle-bar ${showMenu}`}>
                 <ol>
-                <li><Link to="#"><img src={home} />Home</Link></li>
+                <li><Link to="/"><img src={home} />Home</Link></li>
                 <li><Link to="#"><img src={search} />Search</Link></li>
                 <li><Link to="#"><img src={bag} />Cart</Link></li>
                 <li><Link to="#"><img src={user} />Account</Link></li>

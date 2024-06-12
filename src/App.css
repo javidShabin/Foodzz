@@ -260,6 +260,9 @@
     font-size: 12px;
     line-height: 1rem;
 }
+.restaurent .wrapper .container .card .right span{
+    color: #353535;
+}
 .restaurent .wrapper .container .card .right .icon{
     display: flex;
     justify-content: space-around;
