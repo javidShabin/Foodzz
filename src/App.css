@@ -146,8 +146,8 @@
 
 /* Swiper Js Css */
 .swiper {
-    margin-top: 40px;
-    width: 96%;
+    margin-top: 15px;
+    width: 95%;
     height: 100%;
   }
   
@@ -279,9 +279,19 @@
     width: 15px;
 }
 
+/* Top restaurent */
+
 
 /* Responsive screen size */
 @media screen and (min-width : 745px){
+    /* Swipper */
+    .swiper {
+        margin-top: 20px;
+        width: 95%;
+        height: 100%;
+      }
+  
+      
     /* Header section */
     .header .container .logo img{
         width: 100px;
@@ -354,6 +364,13 @@
 }
 
 @media screen and (min-width : 999px){
+    /* Swiper */
+    .swiper {
+        margin-top: 30px;
+        width: 95%;
+        height: 100%;
+      }
+      
     /* Header section */
     .header .container .logo img{
         width: 110px;
@@ -443,6 +460,12 @@
 }
 
 @media screen and (min-width : 1090px){
+    /* Swiper */
+    .swiper {
+        margin-top: 35px;
+        width: 95%;
+        height: 100%;
+      }
     /* Restaurent section */
     .restaurent{
         text-align: justify;
@@ -512,6 +535,12 @@
 }
 
 @media screen and (min-width : 1390px){
+    /* Swiper */
+    .swiper {
+        margin-top: 40px;
+        width: 95%;
+        height: 100%;
+      }
     .restaurent{
         text-align: justify;
         height: 35vh;
