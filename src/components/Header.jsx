@@ -17,7 +17,7 @@ export default function Header() {
             <ul>
                 <li><Link to="/"><img src={home} />Home</Link></li>
                 <li><Link to="#"><img src={search} />Search</Link></li>
-                <li><Link to="#"><img src={bag} />Cart</Link></li>
+                <li><Link to="cartPage"><img src={bag} />Cart</Link></li>
                 <li><Link to="#"><img src={user} />Account</Link></li>
             </ul>
             <div className="location">
