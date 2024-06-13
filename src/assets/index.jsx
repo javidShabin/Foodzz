@@ -19,6 +19,7 @@ import cat4 from "./cat4.png";
 import cat5 from "./cat5.png";
 import cat6 from "./cat6.png";
 import cat7 from "./cat7.png";
+import non from "./non.png";
 
 // Restaurents images
 import rest1 from "./rest1.png"
@@ -51,5 +52,6 @@ export {
     rest3,
     star,
     clock,
-    discount
+    discount,
+    non
 };

@@ -1,3 +1,4 @@
+
 import "./App.css";
 import Foods from "./components/Foods";
 import Header from "./components/Header";
@@ -10,7 +11,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Foods />} />
-        <Route path="topRestaurents" element={<TopRestaurent resting={"restano"}/>} />
+        <Route path="topRestaurents" element={<TopRestaurent/>} />
       </Routes>
     </>
   );
