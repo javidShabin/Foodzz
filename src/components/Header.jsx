@@ -28,7 +28,7 @@ export default function Header() {
                 <ol>
                 <li><Link to="/"><img src={home} />Home</Link></li>
                 <li><Link to="#"><img src={search} />Search</Link></li>
-                <li><Link to="#"><img src={bag} />Cart</Link></li>
+                <li><Link to="cartPage"><img src={bag} />Cart</Link></li>
                 <li><Link to="#"><img src={user} />Account</Link></li>
                 </ol>
                 <span><img src={map}/><b>Tirur, Malappuram</b></span>
