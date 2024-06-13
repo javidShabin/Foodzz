@@ -10,7 +10,7 @@ function App() {
       <Header />
       <Routes>
         <Route path="/" element={<Foods />} />
-        <Route path="topRestaurents" element={<TopRestaurent/>} />
+        <Route path="topRestaurents" element={<TopRestaurent resting={"restano"}/>} />
       </Routes>
     </>
   );

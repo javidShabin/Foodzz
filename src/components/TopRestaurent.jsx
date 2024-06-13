@@ -1,8 +1,10 @@
 import React from "react";
 import { clock, discount, rest1, star } from "../assets";
 
-export default function TopRestaurent() {
+export default function TopRestaurent({resting}) {
+    console.log(resting)
   return (
+    <>
     <div className="top-rests">
         <div className="container">
             <div className="card">
@@ -30,5 +32,6 @@ export default function TopRestaurent() {
             </div>
           </div>
         </div>
+    </>
   );
 }
