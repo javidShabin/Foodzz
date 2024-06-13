@@ -10,8 +10,8 @@ export default function TopRestaurent() {
               <img src={rest1} />
             </div>
             <div className="right">
-              <h3>ok setakkam</h3>
-              <p>setakkam</p>
+              <h3>Mama restaurent</h3>
+              <p>Tasty and Healthy foods</p>
               <div className="icon">
                 <span>
                   <img src={star} />
