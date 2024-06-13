@@ -3,10 +3,9 @@ import { clock, discount, rest1, star } from "../assets";
 
 export default function TopRestaurent() {
   return (
-    <div className="restaurent">
-      <div className="wrapper">
+    <div className="top-rests">
         <div className="container">
-          <div className="card">
+            <div className="card">
             <div className="left">
               <img src={rest1} />
             </div>
@@ -28,9 +27,8 @@ export default function TopRestaurent() {
                 <b> **UPTO 40% DICOUND</b>
               </span>
             </div>
+            </div>
           </div>
         </div>
-      </div>
-    </div>
   );
 }

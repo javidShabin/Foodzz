@@ -281,6 +281,37 @@
 
 /* Top restaurent */
 
+.top-rests{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-rests .container{
+    width: 600px;
+    margin-top: 25px;
+    box-shadow: 10px 10px 10px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+.top-rests .container .card{
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 25px 15px;
+}
+.top-rests .container .card .left img{
+    width: 150px;
+    border-radius: 10px;
+}
+.top-rests .container .card .right{
+    line-height: 25px;
+}
+.top-rests .container .card .right .icon img{
+    width: 30px;
+}
+.top-rests .container .card .right .dicImg img{
+    width: 30px;
+}
 
 /* Responsive screen size */
 @media screen and (min-width : 745px){
