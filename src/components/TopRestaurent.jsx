@@ -1,13 +1,21 @@
-import React from "react";
+
 import { clock, discount, rest1, star } from "../assets";
 import ResItems from "./ResItems";
 import catData from "./CatagoriData";
 
 export default function TopRestaurent() {
 
+    const addItemsToCart = () => {
+        alert("item")
+    }
+
     let catgryItems = catData.map((resItems) => {
+
         return(
-            <ResItems key={resItems.id} resItems={resItems} />
+            <ResItems key={resItems.id} 
+            resItems={resItems}
+            addItemsToCart={addItemsToCart}
+            />
         )
     })
 

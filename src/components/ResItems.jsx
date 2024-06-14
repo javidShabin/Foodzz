@@ -1,11 +1,7 @@
 import React from 'react'
 import { non } from '../assets'
 
-export default function ResItems({resItems}) {
-
-    const addItemToCart = () => {
-        alert("redy")
-    }
+export default function ResItems({resItems, addItemsToCart}) {
 
   return (
     <>
@@ -14,7 +10,7 @@ export default function ResItems({resItems}) {
             <img src={non} alt="" />
         <h3>{resItems.name}</h3>
         <span>$10</span><br/>
-        <button onClick={addItemToCart}>Add</button>
+        <button onClick={addItemsToCart}>Add</button>
         </div>
         <div className="right">
         <img src={resItems.imgSrc} alt="" />
