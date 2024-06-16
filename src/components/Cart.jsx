@@ -1,6 +1,8 @@
 import React from 'react'
 
-export default function Cart(){
+export default function Cart({itemsImg}){
+
+    console.log(itemsImg)
     
   return (
     <div>

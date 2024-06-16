@@ -5,17 +5,11 @@ import catData from "./CatagoriData";
 
 export default function TopRestaurent() {
 
-    // Add to cart function it called in child element
-    const addItemsToCart = () => {
-        alert("item")
-    }
-
     let catgryItems = catData.map((resItems) => {
 
         return(
             <ResItems key={resItems.id} 
             resItems={resItems}
-            addItemsToCart={addItemsToCart}
             />
         )
     })

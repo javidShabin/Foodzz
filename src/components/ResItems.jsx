@@ -1,8 +1,9 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { non } from '../assets'
+import { myContext } from '../App'
 
-export default function ResItems({resItems, addItemsToCart}) {
-
+export default function ResItems({resItems}) {
+    const addItemFnc = useContext(myContext)
   return (
     <>
       <li>
@@ -10,7 +11,7 @@ export default function ResItems({resItems, addItemsToCart}) {
             <img src={non} alt="" />
         <h3>{resItems.name}</h3>
         <span>$10</span><br/>
-        <button onClick={addItemsToCart}>Add</button>
+        <button onClick={()=>{addItemFnc(resItems.imgSrc)}}>Add</button>
         </div>
         <div className="right">
         <img src={resItems.imgSrc} alt="" />
