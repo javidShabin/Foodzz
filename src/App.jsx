@@ -12,10 +12,12 @@ let myContext = React.createContext()
 function App() {
 
     let [itemsImg, setItemsImg] = useState()
+    let [itemsName, setItemsName] = useState('')
 
     // Add to cart function it called in child element
-    const addItemsToCart = (itemsImg) => {
+    const addItemsToCart = (itemsName, itemsImg) => {
         setItemsImg(itemsImg)
+        setItemsName(itemsName)
     }
 
   return (
@@ -25,7 +27,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Foods />} />
         <Route path="topRestaurents" element={<TopRestaurent />} />
-        <Route path="cartPage" element={<Cart itemsImg={itemsImg} />} />
+        <Route path="cartPage" element={<Cart itemsImg={itemsImg} itemsName={itemsName} />} />
       </Routes>
     </myContext.Provider>
     </>

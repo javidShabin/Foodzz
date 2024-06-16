@@ -11,7 +11,7 @@ export default function ResItems({resItems}) {
             <img src={non} alt="" />
         <h3>{resItems.name}</h3>
         <span>$10</span><br/>
-        <button onClick={()=>{addItemFnc(resItems.imgSrc)}}>Add</button>
+        <button onClick={()=>{addItemFnc(resItems.name, resItems.imgSrc)}}>Add</button>
         </div>
         <div className="right">
         <img src={resItems.imgSrc} alt="" />
