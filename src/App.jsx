@@ -28,7 +28,7 @@ function App() {
         <Route path="/" element={<Foods />} />
         <Route path="topRestaurents" element={<TopRestaurent />} />
         <Route path="cartPage" element={<Cart itemsImg={itemsImg} itemsName={itemsName} />} />
-      </Routes>
+        </Routes>
     </myContext.Provider>
     </>
   );

@@ -29,6 +29,8 @@ import star from "./star.png"
 import clock from "./clock.png"
 import discount from "./discount.png"
 
+import arrow from "./arrow.png"
+
 
 export { 
     logo,
@@ -53,5 +55,6 @@ export {
     star,
     clock,
     discount,
-    non
+    non,
+    arrow
 };

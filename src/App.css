@@ -328,6 +328,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    position: relative;
 }
 .cart-page .container{
     display: flex;
@@ -374,6 +375,16 @@
 .cart-page .container .details .buttons button:hover{
     background: #9ef4e1;
     color: #000;
+}
+
+/* /Cart Arrow Btn */
+.cart-page .prevBtn{
+    position: absolute;
+    top: 22px;
+    left: 30px;
+}
+.cart-page .prevBtn img{
+    width: 25px;
 }
 
 /* Responsive screen size */
