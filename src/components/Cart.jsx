@@ -1,41 +1,72 @@
 import React, { useState } from "react";
 
-import { arrow } from "../assets";
+import { arrow, star, clock, discount } from "../assets";
 
 export default function Cart({ itemsName, itemsImg }) {
-  //  Counter is a state initialized to 0
   const [counter, setCounter] = useState(0);
 
-  // Function is called everytime increment button is clicked
   const increaseItem = () => {
-    // Counter state is incremented
     setCounter(counter + 1);
   };
 
-  // Function is called everytime decrement button is clicked
   const decreaseItem = () => {
-    // Counter state is decremented
     setCounter(counter > 0 ? counter - 1 : 0);
   };
   return (
     <>
-      <div className="cart-page">
-      <div className="prevBtn">
-      <img src={arrow} alt="" />
-    </div>
-        <div className="container">
-          <img src={itemsImg} alt="" />
-
-          <div className="details">
-            <h3>{itemsName}</h3>
-            <div className="buttons">
-              <button onClick={decreaseItem}>-</button>
-              <h4>{counter}</h4>
-              <button onClick={increaseItem}>+</button>
-            </div>
+      <div className="cart">
+      <div className="cart-item-info">
+        <img src={itemsImg} alt={itemsImg} />
+        <div className="item-details">
+          <h2>{itemsName}</h2>
+          <p>Tasty and healthy foods</p>
+          <div className="rating-time">
+          <span><img src={star}/>4.2</span>
+          <span><img src={clock} />30 mins</span>
           </div>
         </div>
       </div>
+      <div className="cart-items-box">
+        <div className="item">
+          <span>{itemsName}</span>
+          <div className="quantity">
+            <button onClick={decreaseItem}>-</button>
+            <span>{counter}</span>
+            <button onClick={increaseItem}>+</button>
+          </div>
+        </div>
+       
+      </div>
+      <div className="coupon-section">
+        <input type="text" placeholder="Coupon Code" />
+        <button>Apply</button>
+        <a href="#"><img src={discount} /><b>View All Offers</b></a>
+      </div>
+      <div className="bill-details">
+        <div className="bill-item">
+          <span>Item Total</span>
+          <span>₹ 180</span>
+        </div>
+        <div className="bill-item">
+          <span>Offer Applied</span>
+          <span>- ₹ 50</span>
+        </div>
+        <div className="bill-item">
+          <span>Delivery Charges (4KM)</span>
+          <span>₹ 50</span>
+        </div>
+        <div className="bill-item total">
+          <span>To Pay</span>
+          <span>₹ 180</span>
+        </div>
+      </div>
+      <div className="delivery-address">
+        <span>Deliver To</span>
+        <p>Kuttipuram, Kerala 679571, India, Home Address</p>
+        <button>Change</button>
+      </div>
+      <button className="continue-button">Continue</button>
+    </div>
     </>
   );
 }
