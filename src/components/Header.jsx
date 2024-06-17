@@ -18,18 +18,20 @@ export default function Header() {
                 <li><Link to="/"><img src={home} />Home</Link></li>
                 <li><Link to="#"><img src={search} />Search</Link></li>
                 <li><Link to="cartPage"><img src={bag} />Cart</Link></li>
-                <li><Link to="#"><img src={user} />Account</Link></li>
+                <li><Link to="account"><img src={user} />Account</Link></li>
             </ul>
             <div className="location">
                 <span><img src={map}/><b>Tirur, Malappuram</b></span>
             </div>
+            {/* Search bar */}
+            
             {/* Toggle bar */}
             <div className={`toggle-bar ${showMenu}`}>
                 <ol>
                 <li><Link to="/"><img src={home} />Home</Link></li>
                 <li><Link to="#"><img src={search} />Search</Link></li>
                 <li><Link to="cartPage"><img src={bag} />Cart</Link></li>
-                <li><Link to="#"><img src={user} />Account</Link></li>
+                <li><Link to="account"><img src={user} />Account</Link></li>
                 </ol>
                 <span><img src={map}/><b>Tirur, Malappuram</b></span>
             </div>

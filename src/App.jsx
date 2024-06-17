@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import TopRestaurent from "./components/TopRestaurent";
 import Cart from "./components/Cart";
 import React, {useState} from "react";
+import Account from "./components/Account";
 
 
 let myContext = React.createContext()
@@ -28,6 +29,7 @@ function App() {
         <Route path="/" element={<Foods />} />
         <Route path="topRestaurents" element={<TopRestaurent />} />
         <Route path="cartPage" element={<Cart itemsImg={itemsImg} itemsName={itemsName} />} />
+        <Route path="account" element={<Account/>} />
         </Routes>
     </myContext.Provider>
     </>
