@@ -30,7 +30,7 @@ import clock from "./clock.png"
 import discount from "./discount.png"
 
 import arrow from "./arrow.png"
-
+import man from "./man.png"
 
 export { 
     logo,
@@ -56,5 +56,6 @@ export {
     clock,
     discount,
     non,
-    arrow
+    arrow,
+    man
 };
