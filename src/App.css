@@ -468,6 +468,23 @@
 }
 
 /* Account section */
+.account .container .wrapper .left img{
+    width: 100px;
+}
+.account .container .wrapper{
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid #353535;
+    width: 450px;
+    height: 150px;
+    padding: 0 10px;
+}
+.account .container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
 
 /* Responsive screen size */
 @media screen and (min-width: 745px) {
