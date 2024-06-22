@@ -479,6 +479,7 @@
     width: 450px;
     height: 150px;
     padding: 0 10px;
+    border-radius: 10px;
 }
 .account .container{
     margin-top: 20px;
