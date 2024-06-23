@@ -16,9 +16,11 @@ export default function Account() {
           </div>
         </div>
       </div>
+      <div className="buttons">
       <button>Manage address</button>
       <button>Orders</button>
       <button>Logout</button>
+      </div>
     </div>
   );
 }

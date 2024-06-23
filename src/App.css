@@ -486,6 +486,22 @@
     display: flex;
     justify-content: center;
 }
+.account .buttons{
+    display: flex;
+    margin-left: 32rem;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+}
+.account .buttons button{
+    margin-top: 10px;
+    width: 500px;
+    padding: 6px 0;
+    border: none;
+    border-radius: 5px;
+    background-color: #57ff68;
+    color: #fff;
+}
 
 /* Responsive screen size */
 @media screen and (min-width: 745px) {
