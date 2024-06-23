@@ -499,8 +499,10 @@
     padding: 6px 0;
     border: none;
     border-radius: 5px;
-    background-color: #57ff68;
-    color: #fff;
+    background-color: #01b180;
+    color: #dedede;
+    font-weight: 700;
+    cursor: pointer;
 }
 
 /* Responsive screen size */
