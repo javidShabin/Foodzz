@@ -471,15 +471,23 @@
 .account .container .wrapper .left img{
     width: 100px;
 }
+.account .container .wrapper .left h4,p,a{
+    font-weight: bold;
+    color: #353535;
+}
 .account .container .wrapper{
     display: flex;
     gap: 15px;
     align-items: center;
-    border: 1px solid #353535;
     width: 450px;
     height: 150px;
     padding: 0 10px;
     border-radius: 10px;
+    box-shadow: 10px 10px 10px 15px rgba(0, 0, 0, 0.1);
+    transition: .4s;
+}
+.account .container .wrapper:hover{
+    transform: translateX(-10px);
 }
 .account .container{
     margin-top: 20px;
