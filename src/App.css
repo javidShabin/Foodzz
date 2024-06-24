@@ -487,14 +487,14 @@
     justify-content: center;
 }
 .account .buttons{
-    display: flex;
+     display: flex;
     margin-left: 32rem;
     flex-direction: column;
     justify-content: center;
     margin-top: 20px;
 }
 .account .buttons button{
-    margin-top: 10px;
+    margin-top: 15px;
     width: 500px;
     padding: 6px 0;
     border: none;
@@ -503,6 +503,10 @@
     color: #dedede;
     font-weight: 700;
     cursor: pointer;
+    transition: .1s;
+}
+.account .buttons button:hover{
+    background-color: #03d499;
 }
 
 /* Responsive screen size */
