@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 
-import { arrow, star, clock, discount } from "../assets";
+import { star, clock, discount } from "../assets";
 
 export default function Cart({ itemsName, itemsImg }) {
   const [counter, setCounter] = useState(0);
